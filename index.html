@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -14,22 +14,27 @@
     <header class="header">
       <div class="header__container">
         <div class="header__container__block">
-        <div class="header__container_logo">
-          <img src="img/logo_Oxit.png" alt="logo" class="header__container__logo__img">
+        <div class="header__container__logo">
+          <a href=""><img src="img/logo_Oxit.png" alt="logo" class="header__container__logo__img">
+          </a>
+          <div class="header__burger">
+            <span class="header__burger__toogle"></span>
+          </div>
         </div>
-        <div class="header__container__text">
+        <nav class="header__container__text">
           <ul class="header__container__list">
-            <li class="list__item"><a href="#">Головна</a></li>
-            <li class="list__item"><a href="#">Програма курсу</a></li>
-            <li class="list__item"><a href="#">Відгуки про курс</a></li>
-            <li class="list__item"><a href="#">Відео</a></li>
-            <li class="list__item"><a href="#">Ментори</a></li>
-            <li class="list__item__button"><a href="#" class="button">Подати заявку</a></li>
+            <li class="list__item"><a href="#" class="list__item__link">Головна</a></li>
+            <li class="list__item"><a href="#" class="list__item__link">Програма курсу</a></li>
+            <li class="list__item"><a href="#" class="list__item__link">Відгуки про курс</a></li>
+            <li class="list__item"><a href="#" class="list__item__link">Відео</a></li>
+            <li class="list__item"><a href="#" class="list__item__link">Ментори</a></li>
+            <li class="list__item"><a href="#" class="list__item__link__button">Подати заявку</a></li>
           </ul>
-        </div>
+        </nav>
         </div>
       </div>
     </header>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
