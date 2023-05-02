@@ -11,6 +11,8 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -262,10 +264,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 8px 0 12px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
 }
-.registration__form-input #registration__name::-moz-placeholder, .registration__form-input #registration__surname::-moz-placeholder, .registration__form-input #registration__interest::-moz-placeholder, .registration__form-input #registration__phone::-moz-placeholder, .registration__form-input #registration__email::-moz-placeholder {
-  color: black;
-  font-size: 15px;
-}
 .registration__form-input #registration__name::placeholder,
 .registration__form-input #registration__surname::placeholder,
 .registration__form-input #registration__interest::placeholder,
@@ -403,3 +401,5 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 320px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
