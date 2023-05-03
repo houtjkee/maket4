@@ -1,3 +1,4 @@
+/* Header settings */
 .header {
   position: fixed;
   display: flex;
@@ -9,7 +10,7 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   z-index: 100;
   height: 100px;
-
+  /* Burger menu settings */
   &__burger {
     display: none;
     cursor: pointer;
@@ -110,5 +111,122 @@
         }
       }
     }
+  }
+}
+
+/* Header media */
+
+@media (max-width: 1440px) {
+  .header__container {
+    max-width: min(1250px, 100%);
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__container {
+    max-width: min(1170px, 100%);
+  }
+}
+
+@media (max-width: 1170px) {
+  .header__container {
+    max-width: min(962px, 100%);
+  }
+}
+
+@media (max-width: 962px) {
+  .header__container {
+    max-width: min(768px, 100%);
+  }
+  .header__container__logo {
+    margin: 8px auto 8px 0;
+  }
+  .header__container__logo__img {
+    width: 70px;
+    height: 70px;
+  }
+  .header__container__list {
+    margin: 34px 0 34px auto;
+  }
+  .list__item__link {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    max-width: 667px;
+
+    &__block {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .header__container__logo {
+    margin: 5px auto 5px 0;
+    display: flex;
+    flex-direction: row;
+    width: 667px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .header__container__list {
+    display: none;
+  }
+
+  .header__burger {
+    width: 42px;
+    height: 33px;
+    border-radius: 4px;
+    z-index: 25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #337ab7;
+  }
+
+  .header__container__list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    z-index: 0;
+    margin: 0;
+
+    & .list__item {
+      margin-bottom: 10px;
+
+      &__link {
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+
+    .list__item__link__button {
+      display: block;
+      margin: 0;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .header__container {
+    max-width: 468px;
+  }
+}
+
+@media (max-width: 468px) {
+  .header__container {
+    max-width: 320px;
   }
 }
