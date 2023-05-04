@@ -102,7 +102,7 @@
   }
 }
 
-/* Checkbox settings */
+/* Checkbox style */
 
 .registration__form_checkbox {
   display: inline-flex;
@@ -276,10 +276,18 @@
       & .registration__info {
         margin-top: 0;
         margin-bottom: 20px;
-        padding: 0 15px;
+        padding: 0 10px;
+        overflow: hidden;
 
         &-h {
           margin-bottom: 10px;
+          font-size: 22px;
+          line-height: 28px;
+        }
+
+        &-p {
+          overflow: hidden;
+          font-size: 14px;
         }
       }
 
@@ -291,8 +299,16 @@
         width: 290px;
       }
 
+      .registration__form h {
+        font-size: 22px;
+      }
+
       .registration__form_checkbox {
         max-width: min(290px, 100%);
+      }
+
+      .registration__label-checkbox {
+        line-height: 18px;
       }
 
       #registration__submit {

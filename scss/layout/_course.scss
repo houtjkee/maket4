@@ -1,4 +1,4 @@
-/* Course settings */
+/* Course style */
 .course {
   width: 100%;
   padding-top: 70px;
@@ -113,7 +113,7 @@
   }
 }
 
-/* Course adaptive */
+/* Course media */
 @media (max-width: 1440px) {
   .course__container {
     max-width: min(1250px, 100%);

@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-/* Checkbox settings */
+/* Checkbox style */
 .registration__form_checkbox {
   display: inline-flex;
   align-items: center;
@@ -524,10 +524,17 @@ h1, h2, h3, h4, h5, h6 {
   .registration .registration__container .registration__info {
     margin-top: 0;
     margin-bottom: 20px;
-    padding: 0 15px;
+    padding: 0 10px;
+    overflow: hidden;
   }
   .registration .registration__container .registration__info-h {
     margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .registration .registration__container .registration__info-p {
+    overflow: hidden;
+    font-size: 14px;
   }
   .registration .registration__container #registration__name,
 .registration .registration__container #registration__surname,
@@ -536,14 +543,20 @@ h1, h2, h3, h4, h5, h6 {
 .registration .registration__container #registration__email {
     width: 290px;
   }
+  .registration .registration__container .registration__form h {
+    font-size: 22px;
+  }
   .registration .registration__container .registration__form_checkbox {
     max-width: min(290px, 100%);
+  }
+  .registration .registration__container .registration__label-checkbox {
+    line-height: 18px;
   }
   .registration .registration__container #registration__submit {
     width: 280px;
   }
 }
-/* Course settings */
+/* Course style */
 .course {
   width: 100%;
   padding-top: 70px;
@@ -647,7 +660,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* Course adaptive */
+/* Course media */
 @media (max-width: 1440px) {
   .course__container {
     max-width: min(1250px, 100%);
@@ -731,6 +744,183 @@ h1, h2, h3, h4, h5, h6 {
 .course__container .course__block .course__card .course__card-3 p {
     font-size: 13px;
     line-height: 20px;
+  }
+}
+/* Statistic style */
+.statistic {
+  padding: 65px 0;
+  width: 100%;
+  background-color: #3498db;
+  margin-top: 93px;
+}
+
+.statistic__container {
+  max-width: min(1250px, 100%);
+  margin: 0 auto;
+}
+.statistic__container .statistic__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.statistic__container .statistic__item img {
+  width: 85px;
+  height: 60px;
+}
+.statistic__container .statistic__item h2 {
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 25px 0 18px 0;
+}
+.statistic__container .statistic__item p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.statistic__container .statistic__item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0 20px 0 59px;
+}
+.statistic__container .statistic__item-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0 0 0 34px;
+}
+.statistic__container .statistic__item-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0 16px 0 62px;
+}
+.statistic__container .statistic__item-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0 -8px 0 0;
+}
+
+/* Statistic media */
+@media (max-width: 1440px) {
+  .statistic__container {
+    max-width: min(1250px, 100%);
+  }
+}
+@media (max-width: 1250px) {
+  .statistic__container {
+    max-width: min(1170px, 100%);
+  }
+}
+@media (max-width: 1170px) {
+  .statistic__container {
+    max-width: min(962px, 100%);
+  }
+  .statistic__container .statistic__item h2 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0 15px 0;
+  }
+  .statistic__container .statistic__item p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .statistic__container .statistic__item-1 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-2 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-3 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-4 {
+    margin: 0;
+  }
+}
+@media (max-width: 962px) {
+  .statistic__container {
+    max-width: min(768px, 100%);
+  }
+  .statistic__container .statistic__item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0 15px 0;
+  }
+  .statistic__container .statistic__item p {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .statistic__container .statistic__item-1 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-2 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-3 {
+    margin: 0;
+  }
+  .statistic__container .statistic__item-4 {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .statistic__container {
+    max-width: min(667px, 100%);
+  }
+}
+@media (max-width: 667px) {
+  .statistic__container {
+    max-width: min(468px, 100%);
+  }
+}
+@media (max-width: 468px) {
+  .statistic__container {
+    max-width: 320px;
+  }
+  .statistic__container .statistic__item {
+    justify-content: center;
+  }
+  .statistic__container .statistic__item h2 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0 15px 0;
+  }
+  .statistic__container .statistic__item p {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .statistic__container .statistic__item-1 {
+    padding: 10px 10px;
+    margin: 0 0 0 -2px;
+  }
+  .statistic__container .statistic__item-2 {
+    padding: 10px 10px;
+    margin: 0;
+  }
+  .statistic__container .statistic__item-3 {
+    padding: 10px 10px;
+    margin: 0 6px 0 0;
+  }
+  .statistic__container .statistic__item-4 {
+    padding: 10px 10px;
+    margin: 0;
+    width: 160px;
+  }
+  .statistic__container .statistic__item-4 p {
+    text-align: center;
   }
 }
 
