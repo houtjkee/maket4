@@ -5,14 +5,15 @@ burgerMenu.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
 
-
 $(document).ready(function () {
-  $('.slider__card').slick({
+  $('.course__card').slick({
     dots: false,
     arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 962,
@@ -33,4 +34,3 @@ $(document).ready(function () {
     ]
   });
 });
-
