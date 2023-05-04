@@ -34,3 +34,20 @@ $(document).ready(function () {
     ]
   });
 });
+
+
+$(document).ready(function () {
+  $('.comments__slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 9000,
+    fade: true,
+    cssEase: 'linear'
+  });
+  });
+
+

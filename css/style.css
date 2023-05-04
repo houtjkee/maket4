@@ -614,8 +614,8 @@ h1, h2, h3, h4, h5, h6 {
 .course__container .course__block .course__card .slick-dots button {
   font-size: 0;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border: none;
   background-color: #b3b3b3;
 }
@@ -750,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Statistic style */
 .statistic {
-  padding: 65px 0;
+  padding: 67px 0;
   width: 100%;
   background-color: #3498db;
   margin-top: 93px;
@@ -923,5 +923,150 @@ h1, h2, h3, h4, h5, h6 {
   }
   .statistic__container .statistic__item-4 p {
     text-align: center;
+  }
+}
+/* Comments style */
+.comments {
+  width: 100%;
+  padding-top: 71px;
+  margin-bottom: 0;
+}
+.comments__container {
+  max-width: min(1250px, 100%);
+  margin: 0 auto;
+}
+.comments .comments__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+.comments .comments__block-title {
+  font-size: 34px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.comments .comments__block .comments__slider-item-text img {
+  width: 62px;
+  height: 32px;
+}
+.comments .comments__block .comments__slider {
+  width: 100%;
+}
+.comments .comments__block .comments__slider .slick-list {
+  overflow: hidden;
+}
+.comments .comments__block .comments__slider .slick-track {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+.comments .comments__block .comments__slider .slick-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.comments .comments__block .comments__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 95px 1px 1px 1px;
+}
+.comments .comments__block .comments__slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px 40px 4px;
+}
+.comments .comments__block .comments__slider .slick-dots button {
+  font-size: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-color: #b3b3b3;
+}
+.comments .comments__block .comments__slider .slick-dots li button:before {
+  display: none;
+}
+.comments .comments__block .comments__slider .slick-dots .slick-active button {
+  background-color: #666666;
+}
+.comments .comments__block .comments__slider-item {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.comments .comments__block .comments__slider-item-text {
+  position: relative;
+  margin: 0 auto 20px auto;
+  width: 1008px;
+  padding: 33px 47px 10px 42px;
+}
+.comments .comments__block .comments__slider-item-text .comments__slider-item-comment {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+  text-align: center;
+}
+.comments .comments__block .comments__slider-item-text .quote-left {
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+.comments .comments__block .comments__slider-item-text .quote-right {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+.comments .comments__block .comments__slider-item .comments__slider-item-people h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 10px 0 6px -2px;
+}
+.comments .comments__block .comments__slider-item .comments__slider-item-people p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+/* Comments media */
+@media (max-width: 1440px) {
+  .comments__container {
+    max-width: min(1250px, 100%);
+  }
+}
+@media (max-width: 1250px) {
+  .comments__container {
+    max-width: min(1170px, 100%);
+  }
+}
+@media (max-width: 1170px) {
+  .comments__container {
+    max-width: min(962px, 100%);
+  }
+}
+@media (max-width: 962px) {
+  .comments__container {
+    max-width: min(768px, 100%);
+  }
+}
+@media (max-width: 768px) {
+  .comments__container {
+    max-width: min(667px, 100%);
+  }
+}
+@media (max-width: 667px) {
+  .comments__container {
+    max-width: min(468px, 100%);
+  }
+}
+@media (max-width: 468px) {
+  .comments__container {
+    max-width: min(320px, 100%);
   }
 }
