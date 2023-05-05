@@ -1,16 +1,11 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Light.ttf') format('truetype'),
-  url('../fonts/OpenSans-Light.woff') format('woff'),
-  url('../fonts/OpenSans-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
 @import "base/reset";
 @import "layout/header";
 @import "layout/content";
 @import "layout/course";
 @import "layout/statistic";
 @import "layout/comments";
+@import "base/fonts";
+@import "utils/mixins";
+@import "utils/variable";
+@import "layout/video";
 

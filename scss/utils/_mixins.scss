@@ -1,0 +1,12 @@
+// Display
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin weight-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+

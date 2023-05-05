@@ -1,0 +1,44 @@
+// Colors
+$white: #fff;
+$dark-white: #f7f7f7;
+$black: #000;
+$light-black-two: rgba(0, 0, 0, 0.4);
+$light-black: rgba(0, 0, 0, 0.25);
+$grey: #a2a7b7;
+$light-grey: #b6b7b9;
+$light-grey-two: #c3c3c3;
+$dark-grey: #b3b3b3;
+$dark-grey-two: #666666;
+$blue: #337ab7;
+$light-blue: #3498db;
+
+// Font size
+$fs-extra-small: 0.75em; // 12px
+$fs-small-md: 0.8125em; // 13px
+$fs-small: 0.875em; // 14px
+$fs-icon-deck: 0.937em; //15px
+$fs-base: 16px;
+$fs-medium-small: 1.125em; // 18px
+$fs-large-small: 1.187em; // 19px
+$fs-small-medium: 1.25em; // 20px
+$fs-lg-md: 1.37em; // 22px
+$fs-lg-extra: 1.5em; // 24px
+$fs-medium: 1.562em; // 25px
+$fs-lg-medium: 1.625em; // 26px
+$fs-extra-medium: 1.75em; // 28px
+$fs-large: 1.875em; // 30px
+$fs-large-small: 2.0625em; // 33px
+$fs-large-medium: 2.125em; // 34px
+
+// Font family
+$font-family-base: "Open Sans", sans-serif;
+
+// Breakpoints
+$laptop: 1440px;
+$wide-width: 1250px;
+$wide-width-small: 1170px;
+$desktop-width: 962px;
+$tablet-width: 768px;
+$small-tablet: 667px;
+$small-mobile-width: 468px;
+$extra-small-mobile: 320px;

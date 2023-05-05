@@ -118,6 +118,7 @@
 @media (max-width: 962px) {
   .statistic__container {
     max-width: min(768px, 100%);
+    width: 500px;
 
     .statistic__item {
 
@@ -137,7 +138,7 @@
       }
 
       &-2 {
-        margin: 0;
+        margin: 0 37px 0 0;
       }
 
       &-3 {

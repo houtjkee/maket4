@@ -146,30 +146,192 @@
   .comments__container {
     max-width: min(962px, 100%);
 
+    & .comments__block {
+      .comments__slider-item-text {
+        width: 950px;
+
+        & img {
+          width: 50px;
+        }
+
+        & .quote-right {
+          bottom: 10px;
+        }
+
+        & .quote-left {
+          top: 15px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 962px) {
   .comments__container {
     max-width: min(768px, 100%);
+
+    & .comments__block {
+
+      & .comments__slider {
+        & .slick-dots {
+          margin: 25px 1px 1px 1px;
+
+          & li {
+            margin: 0 10px 16px 4px;
+          }
+        }
+      }
+
+      .comments__slider-item-text {
+        width: 750px;
+
+        & img {
+          width: 40px;
+        }
+
+        & .quote-right {
+          bottom: -10px;
+        }
+
+        & .quote-left {
+          top: 10px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 768px) {
   .comments__container {
     max-width: min(667px, 100%);
+
+    & .comments__block {
+      .comments__slider-item-text {
+        width: 650px;
+        padding: 25px 30px 10px 30px;
+
+        & .comments__slider-item-comment {
+          font-size: 18px;
+        }
+
+        & .quote-right {
+          bottom: -16px;
+        }
+
+        & .quote-left {
+          top: 16px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 667px) {
   .comments__container {
     max-width: min(468px, 100%);
+
+    & .comments__block {
+
+      & .comments__slider-item {
+        & .comments__slider-item-people {
+          & h2 {
+            font-size: 16px;
+          }
+
+          & p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      & .comments__slider {
+        & .slick-dots {
+          margin: 16px 1px 1px 1px;
+
+          & li {
+            margin: 0 10px 16px 4px;
+          }
+        }
+      }
+
+      .comments__slider-item-text {
+        width: 440px;
+        padding: 25px 25px 10px 25px;
+
+        & .comments__slider-item-comment {
+          font-size: 16px;
+        }
+
+        & img {
+          width: 32px;
+        }
+
+        & .quote-right {
+          bottom: -10px;
+        }
+
+        & .quote-left {
+          top: 16px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 468px) {
   .comments__container {
     max-width: min(320px, 100%);
+
+    & .comments__block {
+      &-title {
+        font-size: 28px;
+      }
+
+      & .comments__slider-item {
+        & .comments__slider-item-people {
+          & h2 {
+            font-size: 14px;
+          }
+
+          & p {
+            font-size: 12px;
+          }
+        }
+      }
+
+      & .comments__slider {
+        & .slick-dots {
+          margin: 16px 1px 1px 1px;
+
+          & li {
+            margin: 0 10px 16px 4px;
+          }
+        }
+      }
+
+      .comments__slider-item-text {
+        width: 290px;
+        padding: 25px 15px 10px 16px;
+        margin: 0 auto 15px auto;
+
+        & .comments__slider-item-comment {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        & img {
+          width: 20px;
+        }
+
+        & .quote-right {
+          bottom: 0;
+        }
+
+        & .quote-left {
+          top: 10px;
+        }
+      }
+    }
   }
 }
 
