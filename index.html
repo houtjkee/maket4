@@ -13,11 +13,11 @@
 <!-- All content block -->
 <div class="wrapper">
   <!-- Header block -->
-  <header class="header">
+  <header id="header"  class="header">
     <div class="header__container">
       <div class="header__container__block">
         <div class="header__container__logo">
-          <a href=""><img src="img/logo_Oxit.png" alt="logo" class="header__container__logo__img">
+          <a href="#"><img src="img/logo_Oxit.png" alt="logo" class="header__container__logo__img">
           </a>
           <div class="header__burger">
             <span class="header__burger__toogle"></span>
@@ -25,20 +25,20 @@
         </div>
         <nav class="header__container__text">
           <ul class="header__container__list">
-            <li class="list__item"><a href="#" class="list__item__link">Головна</a></li>
-            <li class="list__item"><a href="#" class="list__item__link">Програма курсу</a></li>
-            <li class="list__item"><a href="#" class="list__item__link">Відгуки про курс</a></li>
-            <li class="list__item"><a href="#" class="list__item__link">Відео</a></li>
-            <li class="list__item"><a href="#" class="list__item__link">Ментори</a></li>
-            <li class="list__item"><a href="#" class="list__item__link__button">Подати заявку</a></li>
+            <li class="list__item"><a href="#header" class="list__item__link">Головна</a></li>
+            <li class="list__item"><a href="#course" class="list__item__link">Програма курсу</a></li>
+            <li class="list__item"><a href="#comments" class="list__item__link">Відгуки про курс</a></li>
+            <li class="list__item"><a href="#video" class="list__item__link">Відео</a></li>
+            <li class="list__item"><a href="#mentors" class="list__item__link">Ментори</a></li>
+            <li class="list__item"><a href="#content" class="list__item__link__button">Подати заявку</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <!-- Content block -->
-  <div class="content">
-    <div class="registration">
+  <div id="content" class="content">
+    <form class="registration">
       <div class="registration__container">
         <div class="registration__block">
           <!-- Information block -->
@@ -74,7 +74,7 @@
                 class="registration__required"><img src="img/required.png" alt="required"></span></label>
               <input type="tel" id="registration__phone" name="registration__phone"
                      placeholder="Номер телефону: +38 XXX XX XX XXX" required=""
-                     pattern="^(\+38)?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{2}[\s.-]?\d{2}$">
+                     pattern="\+38\s\d{3}\s\d{2}\s\d{2}\s\d{3}">
               <label class="registration__label" for="registration__email">Email<span
                 class="registration__required"><img src="img/required.png" alt="required"></span></label>
               <input type="email" id="registration__email" name="registration__email" placeholder="Email" required="">
@@ -90,9 +90,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
     <!-- Course block -->
-    <div class="course">
+    <div id="course" class="course">
       <div class="course__container">
         <div class="course__block">
           <h1 class="course-h1">Курс «Розробка сайтів»</h1>
@@ -130,7 +130,7 @@
       </div>
     </div>
     <!-- Statistic block -->
-    <div class="statistic">
+    <div id="statistic" class="statistic">
       <div class="statistic__container">
         <div class="statistic__item">
           <div class="statistic__item-1">
@@ -153,7 +153,7 @@
       </div>
     </div>
     <!-- Comments block -->
-    <div class="comments">
+    <div id="comments" class="comments">
       <div class="comments__container">
         <div class="comments__block">
           <h1 class="comments__block-title">Що кажуть студенти наших курсів:</h1>
@@ -214,7 +214,7 @@
       </div>
     </div>
     <!-- Video block -->
-    <div class="video">
+    <div id="video" class="video">
       <div class="video__container">
         <div class="video__block">
           <h1 class="video__block-title">Відео</h1>
@@ -227,10 +227,120 @@
             виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
             компʼютерного верстування на
             кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
-          <iframe class="video__block-video" src="https://www.youtube.com/embed/JLHvS0qR5Lw" frameborder="0" allowfullscreen></iframe>
+          <iframe class="video__block-video" src="https://www.youtube.com/embed/JLHvS0qR5Lw" frameborder="0"
+                  allowfullscreen></iframe>
         </div>
       </div>
     </div>
+    <!-- Mentors block -->
+    <div id="mentors" class="mentors">
+      <div class="mentors__container">
+        <div class="mentors__block">
+          <h1 class="mentors__title">Наші ментори</h1>
+          <div class="mentors__cards">
+            <div class="mentors__card-1">
+              <img src="img/viktor.png" alt="mentor viktor" class="mentors__card-image">
+              <div class="mentors__card-info">
+                <h2 class="mentors__card-title">Віктор</h2>
+                <p class="mentors__card-desc">Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                  досвідом
+                  управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор
+                  Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                <p class="mentors__card-desc">Віктору є про що розповісти. Він знає все про створення та керування
+                  великими
+                  компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                  ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодно хвилини.</p>
+                <p class="mentors__card-desc">На книжкових Віктора полицях - сотні прочитаних книг про управління і не
+                  тільки. А от
+                  заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення.
+                  Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                <p class="mentors__card-desc">Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і
+                  досвід. І ви таке
+                  пропустите? Записуйтесь уже зараз!</p>
+              </div>
+            </div>
+            <div class="mentors__card-2">
+              <img src="img/vova.png" alt="mentor vova" class="mentors__card-image">
+              <div class="mentors__card-info">
+                <h2 class="mentors__card-title">Володимир</h2>
+                <p class="mentors__card-desc">Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                  досвідом
+                  управлінець із величезним досвідом! Розробник та ментор компанії InternetDevels, Володимир, висловив
+                  бажання бути викладачем на курсах проект-менеджменту.</p>
+                <p class="mentors__card-desc">Володимиру є про що розповісти. Він знає все про створення та керування
+                  великими
+                  компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                  ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодно хвилини.</p>
+                <p class="mentors__card-desc">На книжкових полицях Володимира - сотні прочитаних книг про управління і
+                  не тільки. А от
+                  заповітні мрії не стоять на полиці, бо Володимир вміє впевнено йти до їхнього здійснення.</p>
+                <p class="mentors__card-desc">Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і
+                  досвід. І ви таке
+                  пропустите? Записуйтесь уже зараз!</p>
+              </div>
+            </div>
+            <div class="mentors__card-3">
+              <img src="img/mark.png" alt="mentor mark" class="mentors__card-image">
+              <div class="mentors__card-info">
+                <h2 class="mentors__card-title">Марк</h2>
+                <p class="mentors__card-desc">Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься
+                  досвідом
+                  управлінець із величезним досвідом! Розробник, Project manager(PM) та ментор компанії InternetDevels,
+                  Марк, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                <p class="mentors__card-desc">Марк є про що розповісти. Він знає все про створення та керування великими
+                  проектами, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                  ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодно хвилини.</p>
+                <p class="mentors__card-desc">На книжкових полицях Марка - сотні прочитаних книг про управління і не
+                  тільки. А от
+                  заповітні мрії не стоять на полиці, бо Марк вміє впевнено йти до їхнього здійснення.
+                  Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                <p class="mentors__card-desc">Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і
+                  досвід. І ви таке
+                  пропустите? Записуйтесь уже зараз!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Google map -->
+      <div class="maps">
+
+      </div>
+      <!-- Contact -->
+      <div class="footer__background">
+        <div class="footer__container">
+          <div class="footer__contact">
+            <div class="footer__contact-1">
+              <img src="" alt="tel">
+              <a href="tel: +38 067 332 17 55"><h2>Телефон</h2>
+                <p>+38 067 332 17 55</p> </a>
+            </div>
+            <div class="footer__contact-2">
+              <img src="" alt="email">
+              <a href="email: office@it.volyn.ua"><h2>E-mail</h2>
+                <p>office@it.volyn.ua</p> </a>
+            </div>
+            <div class="footer__contact-3">
+              <img src="" alt="adress">
+              <h2>Адреса</h2>
+                <p>вул. Боженка 34г, Луцьк</p>
+            </div>
+            <div class="footer__contact-4">
+              <img src="" alt="facebook">
+              <a href="https://facebook.com/oxitschool"><h2>Facebook</h2>
+              <p>facebook.com/oxitschool</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__politic">
+        <a href="#" class="footer__politic-link">© Copyright 2018-2020 Internet Devels</a>
+        <a href="#" class="footer__politic-link">Умови політики конфіденційності</a>
+      </div>
+    </footer>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

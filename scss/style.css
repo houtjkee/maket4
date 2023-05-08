@@ -77,6 +77,12 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 0;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
 /* Header settings */
 .header {
   position: fixed;
@@ -99,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #white;
   border-radius: 2px;
   position: relative;
 }
@@ -108,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
 }
 .header__burger__toogle::before {
@@ -166,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #337ab7;
   border-radius: 50px;
   padding: 10px 17px;
-  color: #ffffff;
+  color: #fff;
 }
 .header__container__list .list__item__link__button:hover {
   background-color: #3498db;
@@ -203,13 +209,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 34px 0 34px auto;
   }
   .list__item__link {
-    font-size: 14px;
+    font-size: 0.875em;
     padding: 10px 15px;
   }
 }
 @media (max-width: 768px) {
   .header__container {
-    max-width: 667px;
+    max-width: min(667px, 100%);
   }
   .header__container__block {
     justify-content: center;
@@ -266,12 +272,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 667px) {
   .header__container {
-    max-width: 468px;
+    max-width: min(468px, 100%);
   }
 }
 @media (max-width: 468px) {
   .header__container {
-    max-width: 320px;
+    max-width: min(320px, 100%);
   }
 }
 .content {
@@ -302,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 16px 0 0 -26px;
 }
 .registration__info-h {
-  font-size: 34px;
+  font-size: 2.125em;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   line-height: 90px;
@@ -325,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
 }
 .registration__form-h {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 18px;
@@ -334,7 +340,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   text-align: center;
-  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   align-items: center;
 }
@@ -347,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 .registration__form-input {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: "Open Sans", sans-serif;
 }
 .registration__form-input #registration__name,
@@ -360,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #c3c3c3;
   border-radius: 5px;
   padding: 15px;
+  font-size: 0.937em;
   margin: 8px 0 12px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
 }
@@ -368,8 +374,8 @@ h1, h2, h3, h4, h5, h6 {
 .registration__form-input #registration__interest::placeholder,
 .registration__form-input #registration__phone::placeholder,
 .registration__form-input #registration__email::placeholder {
-  color: black;
-  font-size: 15px;
+  color: #000;
+  font-size: 0.937em;
 }
 
 /* Checkbox style */
@@ -429,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
   .registration__container .registration__info-h {
     line-height: 45px;
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 1.875em;
   }
   .registration__container .registration__info-p {
     padding: 0;
@@ -523,12 +529,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .registration .registration__container .registration__info-h {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 1.37em;
     line-height: 28px;
   }
   .registration .registration__container .registration__info-p {
     overflow: hidden;
-    font-size: 14px;
+    font-size: 0.875em;
   }
   .registration .registration__container #registration__name,
 .registration .registration__container #registration__surname,
@@ -538,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 290px;
   }
   .registration .registration__container .registration__form-h {
-    font-size: 22px;
+    font-size: 1.37em;
   }
   .registration .registration__container .registration__form_checkbox {
     max-width: min(290px, 100%);
@@ -567,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 .course__container .course__block .course-h1 {
-  font-size: 33px;
+  font-size: 2.0625em;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1.4px;
   margin-bottom: 10px;
@@ -636,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
 .course__container .course__block .course__card .course__card-1 h2,
 .course__container .course__block .course__card .course__card-2 h2,
 .course__container .course__block .course__card .course__card-3 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 28px;
   border-bottom: 1px solid #8fc6eb;
@@ -646,7 +652,7 @@ h1, h2, h3, h4, h5, h6 {
 .course__container .course__block .course__card .course__card-1 p,
 .course__container .course__block .course__card .course__card-2 p,
 .course__container .course__block .course__card .course__card-3 p {
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: "Open Sans", sans-serif;
   color: #c3c3c3;
   line-height: 25px;
@@ -673,14 +679,14 @@ h1, h2, h3, h4, h5, h6 {
   .course__container .course__block .course__card .course__card-1 h2,
 .course__container .course__block .course__card .course__card-2 h2,
 .course__container .course__block .course__card .course__card-3 h2 {
-    font-size: 22px;
+    font-size: 1.37em;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
   .course__container .course__block .course__card .course__card-1 p,
 .course__container .course__block .course__card .course__card-2 p,
 .course__container .course__block .course__card .course__card-3 p {
-    font-size: 13px;
+    font-size: 0.8125em;
   }
 }
 @media (max-width: 1170px) {
@@ -699,14 +705,14 @@ h1, h2, h3, h4, h5, h6 {
   .course__container .course__block .course__card .course__card-1 h2,
 .course__container .course__block .course__card .course__card-2 h2,
 .course__container .course__block .course__card .course__card-3 h2 {
-    font-size: 22px;
+    font-size: 1.37em;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
   .course__container .course__block .course__card .course__card-1 p,
 .course__container .course__block .course__card .course__card-2 p,
 .course__container .course__block .course__card .course__card-3 p {
-    font-size: 13px;
+    font-size: 0.8125em;
   }
 }
 @media (max-width: 962px) {
@@ -729,14 +735,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: min(320px, 100%);
   }
   .course__container .course__block .course-h1 {
-    font-size: 18px;
+    font-size: 1.125em;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
   .course__container .course__block .course__card .course__card-1 p,
 .course__container .course__block .course__card .course__card-2 p,
 .course__container .course__block .course__card .course__card-3 p {
-    font-size: 13px;
+    font-size: 0.8125em;
     line-height: 20px;
   }
 }
@@ -764,16 +770,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
 }
 .statistic__container .statistic__item h2 {
-  font-size: 26px;
+  font-size: 1.625em;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: white;
+  color: #fff;
   margin: 25px 0 18px 0;
 }
 .statistic__container .statistic__item p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: #fff;
 }
 .statistic__container .statistic__item-1 {
   display: flex;
@@ -820,13 +826,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: min(962px, 100%);
   }
   .statistic__container .statistic__item h2 {
-    font-size: 22px;
+    font-size: 1.37em;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
     margin: 15px 0 15px 0;
   }
   .statistic__container .statistic__item p {
-    font-size: 14px;
+    font-size: 0.875em;
     font-family: "Open Sans", sans-serif;
   }
   .statistic__container .statistic__item-1 {
@@ -848,13 +854,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 500px;
   }
   .statistic__container .statistic__item h2 {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
     margin: 15px 0 15px 0;
   }
   .statistic__container .statistic__item p {
-    font-size: 12px;
+    font-size: 0.75em;
     font-family: "Open Sans", sans-serif;
   }
   .statistic__container .statistic__item-1 {
@@ -894,7 +900,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 15px 0 15px 0;
   }
   .statistic__container .statistic__item p {
-    font-size: 12px;
+    font-size: 0.75em;
     font-family: "Open Sans", sans-serif;
   }
   .statistic__container .statistic__item-1 {
@@ -989,20 +995,20 @@ h1, h2, h3, h4, h5, h6 {
 .comments .comments__block .comments__slider-item {
   margin-bottom: 12px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .comments .comments__block .comments__slider-item-text {
   position: relative;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 18px auto;
   width: 1008px;
   padding: 33px 47px 10px 42px;
 }
 .comments .comments__block .comments__slider-item-text .comments__slider-item-comment {
-  font-size: 22px;
+  font-size: 1.37em;
   font-family: "Open Sans", sans-serif;
-  line-height: 35px;
+  line-height: 36px;
   text-align: center;
 }
 .comments .comments__block .comments__slider-item-text .quote-left {
@@ -1016,7 +1022,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 .comments .comments__block .comments__slider-item .comments__slider-item-people h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   margin: 10px 0 6px -2px;
@@ -1087,7 +1093,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 25px 30px 10px 30px;
   }
   .comments__container .comments__block .comments__slider-item-text .comments__slider-item-comment {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .comments__container .comments__block .comments__slider-item-text .quote-right {
     bottom: -16px;
@@ -1104,7 +1110,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
   .comments__container .comments__block .comments__slider-item .comments__slider-item-people p {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   .comments__container .comments__block .comments__slider .slick-dots {
     margin: 16px 1px 1px 1px;
@@ -1134,13 +1140,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: min(320px, 100%);
   }
   .comments__container .comments__block-title {
-    font-size: 28px;
+    font-size: 1.75em;
   }
   .comments__container .comments__block .comments__slider-item .comments__slider-item-people h2 {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   .comments__container .comments__block .comments__slider-item .comments__slider-item-people p {
-    font-size: 12px;
+    font-size: 0.75em;
   }
   .comments__container .comments__block .comments__slider .slick-dots {
     margin: 16px 1px 1px 1px;
@@ -1154,7 +1160,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 15px auto;
   }
   .comments__container .comments__block .comments__slider-item-text .comments__slider-item-comment {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 22px;
   }
   .comments__container .comments__block .comments__slider-item-text img {
@@ -1166,12 +1172,6 @@ h1, h2, h3, h4, h5, h6 {
   .comments__container .comments__block .comments__slider-item-text .quote-left {
     top: 10px;
   }
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
 }
 .video {
   width: 100%;
@@ -1203,12 +1203,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 .video__container .video__block-video {
   width: 1020px;
   height: 521px;
-  margin-bottom: 63px;
+  margin-bottom: 65px;
 }
 
 @media (max-width: 1440px) {

@@ -5,19 +5,18 @@
   margin-bottom: 0;
 
   &__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
     margin: 0 auto;
   }
 
   & .comments__block {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     padding: 0 15px;
 
     &-title {
       font-size: 34px;
-      font-family: 'Open Sans', sans-serif;
+      font-family: $font-family-base;
       font-weight: bold;
       letter-spacing: 1px;
     }
@@ -42,8 +41,7 @@
       }
 
       .slick-slide {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         text-align: center;
       }
@@ -65,7 +63,7 @@
           width: 12px;
           height: 12px;
           border: none;
-          background-color: #b3b3b3;
+          background-color: $dark-gray;
         }
 
         & li button:before {
@@ -73,27 +71,26 @@
         }
 
         .slick-active button {
-          background-color: #666666;
+          background-color: $dark-gray-two;
         }
       }
 
       &-item {
         margin-bottom: 12px;
-        display: flex;
+        @include flex-column;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
 
         &-text {
           position: relative;
-          margin: 0 auto 20px auto;
+          margin: 0 auto 18px auto;
           width: 1008px;
           padding: 33px 47px 10px 42px;
 
           .comments__slider-item-comment {
-            font-size: 22px;
-            font-family: 'Open Sans', sans-serif;
-            line-height: 35px;
+            font-size: $fs-lg-md;
+            font-family: $font-family-base;
+            line-height: 36px;
             text-align: center;
           }
 
@@ -112,15 +109,15 @@
 
         .comments__slider-item-people {
           & h2 {
-            font-size: 20px;
-            font-family: 'Open Sans', sans-serif;
+            font-size: $fs-small-medium;
+            font-family: $font-family-base;
             text-align: center;
             margin: 10px 0 6px -2px;
           }
 
           & p {
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
+            font-size: $fs-base;
+            font-family: $font-family-base;
             font-style: italic;
           }
         }
@@ -130,21 +127,21 @@
 }
 
 /* Comments media */
-@media (max-width: 1440px) {
+@media (max-width: $laptop) {
   .comments__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: $wide-width) {
   .comments__container {
-    max-width: min(1170px, 100%);
+    max-width: min($wide-width-small, 100%);
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: $wide-width-small) {
   .comments__container {
-    max-width: min(962px, 100%);
+    max-width: min($desktop-width, 100%);
 
     & .comments__block {
       .comments__slider-item-text {
@@ -166,9 +163,9 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: $desktop-width) {
   .comments__container {
-    max-width: min(768px, 100%);
+    max-width: min($tablet-width, 100%);
 
     & .comments__block {
 
@@ -201,9 +198,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet-width) {
   .comments__container {
-    max-width: min(667px, 100%);
+    max-width: min($small-tablet, 100%);
 
     & .comments__block {
       .comments__slider-item-text {
@@ -211,7 +208,7 @@
         padding: 25px 30px 10px 30px;
 
         & .comments__slider-item-comment {
-          font-size: 18px;
+          font-size: $fs-medium-small;
         }
 
         & .quote-right {
@@ -226,20 +223,20 @@
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: $small-tablet) {
   .comments__container {
-    max-width: min(468px, 100%);
+    max-width: min($small-mobile-width, 100%);
 
     & .comments__block {
 
       & .comments__slider-item {
         & .comments__slider-item-people {
           & h2 {
-            font-size: 16px;
+            font-size: $fs-base;
           }
 
           & p {
-            font-size: 14px;
+            font-size: $fs-small;
           }
         }
       }
@@ -259,7 +256,7 @@
         padding: 25px 25px 10px 25px;
 
         & .comments__slider-item-comment {
-          font-size: 16px;
+          font-size: $fs-base;
         }
 
         & img {
@@ -278,23 +275,23 @@
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: $small-mobile-width) {
   .comments__container {
-    max-width: min(320px, 100%);
+    max-width: min($extra-small-mobile, 100%);
 
     & .comments__block {
       &-title {
-        font-size: 28px;
+        font-size: $fs-extra-medium;
       }
 
       & .comments__slider-item {
         & .comments__slider-item-people {
           & h2 {
-            font-size: 14px;
+            font-size: $fs-small;
           }
 
           & p {
-            font-size: 12px;
+            font-size: $fs-extra-small;
           }
         }
       }
@@ -315,7 +312,7 @@
         margin: 0 auto 15px auto;
 
         & .comments__slider-item-comment {
-          font-size: 14px;
+          font-size: $fs-small;
           line-height: 22px;
         }
 

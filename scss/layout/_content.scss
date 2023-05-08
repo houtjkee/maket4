@@ -6,10 +6,10 @@
 .registration {
   width: 100%;
   padding-top: 54px;
-  background-color: #f7f7f7;
+  background-color: $dark-white;
 
   &__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
     margin: 0 auto;
 
     & .registration__block {
@@ -28,34 +28,33 @@
   margin: 16px 0 0 -26px;
 
   &-h {
-    font-size: 34px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: $fs-large-medium;
+    font-family: $font-family-base;
     font-weight: bold;
     line-height: 90px;
     letter-spacing: 1.5px;
   }
 
   &-p {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: $fs-base;
+    font-family: $font-family-base;
     line-height: 32px;
     text-align: center;
     padding: 0 64px;
     letter-spacing: 1px;
-    color: #b6b7b9;
+    color: $light-gray;
   }
 }
 
 /* Content right block(form) */
 .registration__form {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: flex-start;
 
   &-h {
-    font-size: 24px;
+    font-size: $fs-lg-extra;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family-base;
     margin-bottom: 18px;
   }
 
@@ -63,8 +62,7 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family-base;
     align-items: center;
 
     .registration__required img {
@@ -76,10 +74,9 @@
   }
 
   &-input {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    @include flex-column;
+    font-size: $fs-small;
+    font-family: $font-family-base;
 
     & #registration__name,
     #registration__surname,
@@ -88,15 +85,16 @@
     #registration__email {
       width: 590px;
       height: 52px;
-      border: 1px solid #c3c3c3;
+      border: 1px solid $light-gray-two;
       border-radius: 5px;
       padding: 15px;
+      font-size: $fs-icon-deck;
       margin: 8px 0 12px 0;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+      box-shadow: 0 1px 1px $light-black inset;
 
       &::placeholder {
-        color: black;
-        font-size: 15px;
+        color: $black;
+        font-size: $fs-icon-deck;
       }
     }
   }
@@ -132,34 +130,34 @@
   margin: 0 auto 28px auto;
   border-radius: 35px;
   font-weight: bold;
-  background-color: #337ab7;
+  background-color: $blue;
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.75px;
   cursor: pointer;
 
   &:hover {
-    background-color: #3498db;
+    background-color: $light-blue;
   }
 }
 
 /* Content media */
 
-@media (max-width: 1440px) {
+@media (max-width: $laptop) {
   .registration__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: $wide-width) {
   .registration__container {
-    max-width: min(1170px, 100%);
+    max-width: min($wide-width-small, 100%);
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: $wide-width-small) {
   .registration__container {
-    max-width: min(962px, 100%);
+    max-width: min($desktop-width, 100%);
 
     & .registration__info {
       margin-top: -180px;
@@ -167,7 +165,7 @@
       &-h {
         line-height: 45px;
         letter-spacing: 1px;
-        font-size: 30px;
+        font-size: $fs-large;
       }
 
       &-p {
@@ -185,13 +183,12 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: $desktop-width) {
   .registration__container {
-    max-width: min(768px, 100%);
+    max-width: min($tablet-width, 100%);
 
     & .registration__block {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
     }
 
     & .registration__info {
@@ -213,9 +210,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet-width) {
   .registration__container {
-    max-width: min(667px, 100%);
+    max-width: min($small-tablet, 100%);
 
     & .registration__info {
       margin-top: 0;
@@ -242,9 +239,9 @@
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: $small-tablet) {
   .registration__container {
-    max-width: min(468px, 100%);
+    max-width: min($small-mobile-width, 100%);
 
     & .registration__info {
       margin-top: 0;
@@ -266,12 +263,12 @@
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: $small-mobile-width) {
   .registration {
     padding-top: 40px;
 
     .registration__container {
-      max-width: min(320px, 100%);
+      max-width: min($extra-small-mobile, 100%);
 
       & .registration__info {
         margin-top: 0;
@@ -281,13 +278,13 @@
 
         &-h {
           margin-bottom: 10px;
-          font-size: 22px;
+          font-size: $fs-lg-md;
           line-height: 28px;
         }
 
         &-p {
           overflow: hidden;
-          font-size: 14px;
+          font-size: $fs-small;
         }
       }
 
@@ -300,7 +297,7 @@
       }
 
       .registration__form-h {
-        font-size: 22px;
+        font-size: $fs-lg-md;
       }
 
       .registration__form_checkbox {

@@ -1,15 +1,14 @@
 .video {
   width: 100%;
   padding-top: 72px;
-  background-color: #f7f7f7;
+  background-color: $dark-white;
 
   &__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
     margin: 0 auto;
 
     & .video__block {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       justify-content: center;
       align-items: center;
       padding: 0 15px;
@@ -22,19 +21,20 @@
         letter-spacing: 1px;
         margin-bottom: 28px;
       }
+
       &-text {
         text-align: center;
         letter-spacing: 1px;
         font-size: $fs-base;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-family-base;
         line-height: 24px;
-        margin-bottom: 29px;
+        margin-bottom: 27px;
       }
 
       &-video {
         width: 1020px;
         height: 521px;
-        margin-bottom: 63px;
+        margin-bottom: 65px;
       }
     }
   }
@@ -69,6 +69,7 @@
 @media (max-width: $desktop-width) {
   .video__container {
     max-width: min($tablet-width, 100%);
+
     & .video__block {
       &-text {
         font-size: $fs-small;
@@ -86,10 +87,12 @@
 @media (max-width: $tablet-width) {
   .video__container {
     max-width: $small-tablet;
+
     & .video__block {
       &-text {
         line-height: 20px;
       }
+
       &-video {
         height: 245px;
         margin-bottom: 63px;
@@ -101,10 +104,12 @@
 @media (max-width: $small-tablet) {
   .video__container {
     max-width: $small-mobile-width;
+
     & .video__block {
       &-text {
         line-height: 18px;
       }
+
       &-video {
         height: 165px;
         margin-bottom: 63px;
@@ -116,10 +121,12 @@
 @media (max-width: $small-mobile-width) {
   .video__container {
     max-width: $extra-small-mobile;
+
     & .video__block {
       &-text {
         font-size: $fs-small-md;
       }
+
       &-video {
         height: 170px;
         margin-bottom: 63px;

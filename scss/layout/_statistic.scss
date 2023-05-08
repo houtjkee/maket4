@@ -1,12 +1,13 @@
 /* Statistic style */
- .statistic {
-   padding: 67px 0;
-   width: 100%;
-   background-color: #3498db;
-   margin-top: 93px;
- }
+.statistic {
+  padding: 67px 0;
+  width: 100%;
+  background-color: $light-blue;
+  margin-top: 118px;
+}
+
 .statistic__container {
-  max-width: min(1250px, 100%);
+  max-width: min($wide-width, 100%);
   margin: 0 auto;
 
   .statistic__item {
@@ -22,43 +23,42 @@
     }
 
     & h2 {
-      font-size: 26px;
-      font-family: 'Open Sans', sans-serif;
+      font-size: $fs-lg-medium;
+      font-family: $font-family-base;
       font-weight: bold;
-      color: white;
+      color: $white;
       margin: 25px 0 18px 0;
     }
 
     & p {
-      font-size: 16px;
-      font-family: 'Open Sans', sans-serif;
-      color: white;
+      font-size: $fs-base;
+      font-family: $font-family-base;
+      color: $white;
     }
 
     &-1 {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 15px 20px;
       margin: 0 20px 0 59px;
     }
+
     &-2 {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 15px 20px;
       margin: 0 0 0 34px;
     }
+
     &-3 {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 15px 20px;
       margin: 0 16px 0 62px;
     }
+
     &-4 {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 15px 20px;
       margin: 0 -8px 0 0;
@@ -67,35 +67,36 @@
 }
 
 /* Statistic media */
-@media (max-width: 1440px) {
+@media (max-width: $laptop) {
   .statistic__container {
-    max-width: min(1250px, 100%);
+    max-width: min($wide-width, 100%);
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: $wide-width) {
   .statistic__container {
-    max-width: min(1170px, 100%);
+    max-width: min($wide-width-small, 100%);
   }
 }
 
-@media (max-width: 1170px) {
+@media (max-width: $wide-width-small) {
   .statistic__container {
-    max-width: min(962px, 100%);
+    max-width: min($desktop-width, 100%);
 
     .statistic__item {
 
       & h2 {
-        font-size: 22px;
+        font-size: $fs-lg-md;
         font-weight: bold;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-family-base;
         margin: 15px 0 15px 0;
       }
 
       & p {
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: $fs-small;
+        font-family: $font-family-base;
       }
+
       &-1 {
         margin: 0;
       }
@@ -115,24 +116,25 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: $desktop-width) {
   .statistic__container {
-    max-width: min(768px, 100%);
+    max-width: min($tablet-width, 100%);
     width: 500px;
 
     .statistic__item {
 
       & h2 {
-        font-size: 18px;
+        font-size: $fs-medium-small;
         font-weight: bold;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-family-base;
         margin: 15px 0 15px 0;
       }
 
       & p {
-        font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: $fs-extra-small;
+        font-family: $font-family-base;
       }
+
       &-1 {
         margin: 0;
       }
@@ -152,36 +154,37 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet-width) {
   .statistic__container {
-    max-width: min(667px, 100%);
+    max-width: min($small-tablet, 100%);
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: $small-tablet) {
   .statistic__container {
-    max-width: min(468px, 100%);
+    max-width: min($small-mobile-width, 100%);
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: $small-mobile-width) {
   .statistic__container {
-    max-width: 320px;
+    max-width: $extra-small-mobile;
 
     .statistic__item {
       justify-content: center;
 
       & h2 {
-        font-size: 16px;
+        font-size: $fs-base;
         font-weight: bold;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-family-base;
         margin: 15px 0 15px 0;
       }
 
       & p {
-        font-size: 12px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: $fs-extra-small;
+        font-family: $font-family-base;
       }
+
       &-1 {
         padding: 10px 10px;
         margin: 0 0 0 -2px;
@@ -201,6 +204,7 @@
         padding: 10px 10px;
         margin: 0;
         width: 160px;
+
         & p {
           text-align: center;
         }

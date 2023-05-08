@@ -4,13 +4,14 @@ $dark-white: #f7f7f7;
 $black: #000;
 $light-black-two: rgba(0, 0, 0, 0.4);
 $light-black: rgba(0, 0, 0, 0.25);
-$grey: #a2a7b7;
-$light-grey: #b6b7b9;
-$light-grey-two: #c3c3c3;
-$dark-grey: #b3b3b3;
-$dark-grey-two: #666666;
+$gray: #a2a7b7;
+$light-gray: #b6b7b9;
+$light-gray-two: #c3c3c3;
+$dark-gray: #b3b3b3;
+$dark-gray-two: #666666;
 $blue: #337ab7;
 $light-blue: #3498db;
+$extra-light-blue: #8fc6eb;
 
 // Font size
 $fs-extra-small: 0.75em; // 12px
@@ -32,6 +33,7 @@ $fs-large-medium: 2.125em; // 34px
 
 // Font family
 $font-family-base: "Open Sans", sans-serif;
+$font-family-bold: 'Open Sans Bold';
 
 // Breakpoints
 $laptop: 1440px;

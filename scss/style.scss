@@ -1,11 +1,11 @@
 @import "base/reset";
+@import "utils/mixins";
+@import "utils/variable";
+@import "base/fonts";
 @import "layout/header";
 @import "layout/content";
 @import "layout/course";
 @import "layout/statistic";
 @import "layout/comments";
-@import "base/fonts";
-@import "utils/mixins";
-@import "utils/variable";
 @import "layout/video";
-
+@import "layout/mentors"

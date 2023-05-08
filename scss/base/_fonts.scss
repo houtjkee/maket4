@@ -6,3 +6,10 @@
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+}
