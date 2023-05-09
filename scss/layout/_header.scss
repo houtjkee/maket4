@@ -1,4 +1,4 @@
-/* Header settings */
+/* Header style */
 .header {
   position: fixed;
   display: flex;
@@ -19,7 +19,7 @@
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #white;
+      background-color: $white;
       border-radius: 2px;
       position: relative;
 

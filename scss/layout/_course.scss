@@ -22,8 +22,8 @@
       }
 
       .course__card {
-        width: 100%;
         @include flex-column;
+        width: 100%;
         justify-content: center;
 
         .slick-list {

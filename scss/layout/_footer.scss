@@ -1,0 +1,258 @@
+/* Footer style */
+
+.footer {
+  padding-top: 23px;
+  width: 100%;
+  margin-top: auto;
+
+  & .maps {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    & .google_map {
+      overflow: hidden;
+      background: none;
+      width: 100%;
+      height: 400px;
+
+      & .ID_geo {
+        height: 400px;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer__background {
+    display: flex;
+    width: 100%;
+    background-color: $light-blue;
+    padding-bottom: 6px;
+  }
+
+  &__container {
+    max-width: min($wide-width, 100%);
+    margin: 0 auto;
+
+    .footer__contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      width: 1150px;
+      padding: 37px 15px;
+
+      & h2 {
+        font-family: $font-family-base;
+        font-size: $fs-medium-small;
+        font-weight: bold;
+        color: $white;
+        margin: 15px 0 10px 0;
+      }
+
+      & p {
+        font-size: $fs-small;
+        font-family: $font-family-base;
+        color: $white;
+      }
+
+      & img {
+        height: 60px;
+        width: 60px;
+      }
+
+      &-1 {
+        @include flex-column;
+        margin: 0 15px 0 27px;
+        padding: 0 15px;
+        align-items: center;
+      }
+
+      &-2 {
+        @include flex-column;
+        margin: 0 0 0 29px;
+        padding: 0 15px;
+        align-items: center;
+      }
+
+      &-3 {
+        @include flex-column;
+        margin: 0 0 0 27px;
+        padding: 0 15px;
+        align-items: center;
+      }
+
+      &-4 {
+        @include flex-column;
+        margin: 0 11px 0 0;
+        padding: 0 15px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.footer__politic {
+  @include flex-column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 43px;
+  background-color: $white;
+
+  a {
+    padding: 10px;
+    color: $black;
+
+    &:first-child {
+      color: $blue;
+      padding-left: 13px;
+    }
+  }
+}
+
+/* Footer media */
+
+@media (max-width: $laptop) {
+  .mentors__container {
+    max-width: min($wide-width, 100%);
+  }
+}
+
+@media (max-width: $wide-width) {
+  .mentors__container {
+    max-width: min($wide-width-small, 100%);
+
+    & .mentors__cards {
+      & .slick-slide {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $wide-width-small) {
+  .footer__container {
+    max-width: min($desktop-width, 100%);
+
+    & .footer__contact {
+      width: 942px;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .footer__container {
+    max-width: min($tablet-width, 100%);
+
+    & .footer__contact {
+      width: 500px;
+
+      &-1 {
+        margin: 0 15px 0 27px;
+      }
+
+      &-2 {
+        margin: 0 26px 0 0;
+      }
+
+      &-3 {
+        margin: 10px 0 0 13px;
+      }
+
+      &-4 {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer__container {
+    max-width: min($small-tablet, 100%);
+  }
+}
+
+@media (max-width: $small-tablet) {
+  .footer__container {
+    max-width: min($small-mobile-width, 100%);
+
+    & .footer__contact {
+      width: 450px;
+
+      & h2 {
+        font-size: $fs-base;
+      }
+
+      & p {
+        font-size: $fs-extra-small;
+      }
+
+      & img {
+        height: 45px;
+        width: 45px;
+      }
+
+      &-2 {
+        margin: 0 18px 0 0;
+      }
+
+      &-3 {
+        margin: 10px 0 0 11px;
+      }
+    }
+  }
+}
+
+@media (max-width: $small-mobile-width) {
+  .footer__container {
+    max-width: min($extra-small-mobile, 100%);
+
+    & .footer__contact {
+      width: 320px;
+
+      & h2 {
+        font-size: $fs-small;
+      }
+
+      & img {
+        height: 35px;
+        width: 35px;
+      }
+
+      &-1 {
+        margin: 0;
+        padding: 0 10px;
+      }
+
+      &-2 {
+        margin: 0 18px 0 0;
+        padding: 0 10px;
+      }
+
+      &-3 {
+        width: 130px;
+        margin: 0;
+        padding: 0 10px;
+      }
+
+      &-4 {
+        width: 155px;
+        margin: 0;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+
+.footer__politic {
+  padding: 30px;
+
+  a {
+    padding: 5px;
+    font-size: $fs-small;
+  }
+}
+

@@ -9,7 +9,7 @@ burgerMenu.addEventListener('click', () => {
 /* Course slider */
 $(document).ready(function () {
   $('.course__card').slick({
-    dots:  $('.course__card > div').length > 3,
+    dots: $('.course__card > div').length > 3,
     arrows: false,
     infinite: true,
     slidesToShow: 3,
@@ -84,7 +84,7 @@ document.querySelectorAll('.header__container__list a, .header__container__logo_
 });
 
 /* Registration form validation */
-$(document).ready(function() {
+$(document).ready(function () {
   const $RegisterName = $('#registration__name');
   const $RegisterLastname = $('#registration__surname');
   const $RegisterChoise = $('#registration__interest');
@@ -108,21 +108,42 @@ $(document).ready(function() {
     }
   }
 
-  $RegisterName.blur(function() {
+  $RegisterName.blur(function () {
     validateField($RegisterName, /^[А-ЩЬЮЯҐЄІЇа-щьюяґєії]/);
   });
 
-  $RegisterLastname.blur(function() {
+  $RegisterLastname.blur(function () {
     validateField($RegisterLastname, /^[А-ЩЬЮЯҐЄІЇа-щьюяґєії]/);
   });
 
-  $RegisterChoise.blur(function() {
+  $RegisterChoise.blur(function () {
     validateField($RegisterChoise, /^(developer|QA)$/);
   });
 
-  $RegisterPhone.blur(function() {
+  $RegisterPhone.blur(function () {
     validateField($RegisterPhone, /\+38\s\d{3}\s\d{2}\s\d{2}\s\d{3}/);
   });
+
+  $RegisterEmail.blur(function () {
+    validateField($RegisterEmail, /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
+  });
+
+  $RegisterCheckBox.blur(function () {
+    if (!$RegisterCheckBox.prop('checked')) {
+      $RegisterCheckBox.siblings('label').css({
+        color: 'red',
+        fontWeight: 'bold'
+      });
+      return false;
+    } else {
+      $RegisterCheckBox.siblings('label').css({
+        color: '',
+        fontWeight: ''
+      });
+      return true;
+    }
+  });
 });
+
 
 
